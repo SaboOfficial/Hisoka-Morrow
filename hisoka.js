@@ -850,7 +850,6 @@ let teks = `══✪〘 *👥 Tag All* 〙✪══
                 break
                 case 'hidetag': case 'h': {
             if (!m.isGroup) throw mess.group
-            if (!isBotAdmins) throw mess.botAdmin
             if (!isAdmins) throw mess.admin
             hisoka.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
@@ -1534,7 +1533,7 @@ break
                 hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${urls[text - 1]}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
-            case 'pinterest': {
+            case 'pinterest': case 'pin': {
                 m.reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
