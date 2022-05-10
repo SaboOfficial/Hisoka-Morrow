@@ -537,6 +537,14 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 
+case 'revoke': case 'resetlink': case 'resetlinkgc':
+                if (!m.isGroup) return reply(lang.groupOnly())
+                if (!isBotAdmins) return reply(lang.botNotAdmin())
+                if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
+                let link = await alpha.groupRevokeInvite(from)
+                await reply(lang.ok() + `\n\n*New Link for ${groupName}* :\n https://chat.whatsapp.com/${link}`)
+            break
+
 case 'tes': {
                 m.reply('Bot Udah On Nih Kontol, Pake Lah Ngentot')
             }
@@ -1436,7 +1444,7 @@ break
                 })
                 }
                 break
-        case 'gimage': {
+        case 'gimage': case 'image': {
         if (!text) throw `Example : ${prefix + command} kaori cicak`
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
@@ -2548,6 +2556,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}setname [text]
 │⭔ ${prefix}setdesc [text]
 │⭔ ${prefix}group [option]
+│⭔ ${prefix}revoke
 │⭔ ${prefix}editinfo [option]
 │⭔ ${prefix}add @user
 │⭔ ${prefix}kick @user
