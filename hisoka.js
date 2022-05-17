@@ -1437,7 +1437,7 @@ break
                 }
                 break
         case 'gimage': case 'image': {
-        if (!text) throw `Example : ${prefix + command} kaori cicak`
+        if (!text) throw `Example : ${prefix + command} Yang Ingin Dicari`
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
         n = result
@@ -1459,7 +1459,7 @@ break
         }
         break
 	    case 'play': case 'ytplay': {
-                if (!text) throw `Example : ${prefix + command} story wa anime`
+                if (!text) throw `Example : ${prefix + command} Yang Ingin Dicari`
                 let yts = require("yt-search")
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
