@@ -29,7 +29,7 @@ global.mess = {
     success: '*_Done Ngab_*',
     admin: '*_Khusus Admin Deck, Lu Ngapain Coba? Awoakwoak_*',
     botAdmin: '*_Mikir Dek Bot Ga Admin_*',
-    owner: '*_Khusus Owner Deck, Lu NgapainnCoba? Awoakwoak_*',
+    owner: '*_Khusus Owner Deck, Lu Ngapain Coba? Awoakwoak_*',
     group: '*_Cuman Bisa Di Group Deck_*',
     private: '*_Cuman Bisa Di Private Message Deck_*',
     bot: '*_Fitur Khusus Pengguna Bot Deck_*',
