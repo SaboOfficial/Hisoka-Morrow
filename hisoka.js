@@ -538,7 +538,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
 
 case 'tes': {
-                m.reply('Bot Udah On Nih Kontol, Pake Lah Ngentot')
+                m.reply('Bot Udah On Nih Kontol, Kalo Delay Wajar Ya Kontol Banyak Yang Spam Memeg')
             }
             break
 
@@ -1541,7 +1541,7 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
-            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob': {
+            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': {
                 m.reply(mess.wait)
                 hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Generate Random ' + command }, { quoted: m })
             }
@@ -2615,10 +2615,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}husbu
 │⭔ ${prefix}neko
 │⭔ ${prefix}shinobu
-│⭔ ${prefix}waifus (nsfw)
-│⭔ ${prefix}nekos (nsfw)
-│⭔ ${prefix}trap (nsfw)
-│⭔ ${prefix}blowjob (nsfw)
 │
 └───────⭓
 
