@@ -39,8 +39,8 @@
     },
     "registrationId": 2,
     "advSecretKey": "O0RflZpnKyc6f5Zk7cBWbUH4BI3/kRCDEcoGF65zhHY=",
-    "nextPreKeyId": 31,
-    "firstUnuploadedPreKeyId": 31,
+    "nextPreKeyId": 32,
+    "firstUnuploadedPreKeyId": 32,
     "serverHasPreKeys": true,
     "account": {
       "details": "CLeN+tMCEJnfjZQGGAM=",
@@ -332,6 +332,16 @@
         "public": {
           "type": "Buffer",
           "data": "GsQEuUAbbUSylOMAoD2P5UIlqHiqeHOI0VhBAX2NjTA="
+        }
+      },
+      "31": {
+        "private": {
+          "type": "Buffer",
+          "data": "OKhc7eT3jvVQX3kNKrl6A5aTYKodkOrdpgVP8SnG2kM="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "T/m5fXkqrDFQjS83UUKWy967w7+kqMWOuWawBia3DUs="
         }
       }
     },

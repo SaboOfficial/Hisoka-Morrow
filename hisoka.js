@@ -533,7 +533,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5c54a82558e832b5b665d.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Sabo MD\n⭔ Rp.4.000 PERMINGGU\n⭔ Rp.6.000 PERBULAN\n⭔ Rp.8.000 PERMANENT\n\nPembayaran Bisa Via Dana/Gopay/Pulsa/Qris All Payment\n\nUntuk Info Lebih Lengkap, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nDonasi Untuk Saya :\n⭔ Dana : 0821-4520-3493\n⭔ Gopay : 0821-4520-3493\n⭔ Pulsa : 0821-4520-3493\n⭔ Qris All Payment : Scan Kode QR Diatas!` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/b210a360b5947659bbede.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Sabo MD\n⭔ Rp.4.000 PERMINGGU\n⭔ Rp.6.000 PERBULAN\n⭔ Rp.8.000 PERMANENT\n\nPembayaran Bisa Via Dana/Gopay/Pulsa/Qris All Payment\n\nUntuk Info Lebih Lengkap, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nDonasi Untuk Saya :\n⭔ Dana : 0821-4520-3493\n⭔ Gopay : 0821-4520-3493\n⭔ Pulsa : 0821-4520-3493\n⭔ Qris All Payment : Scan Kode QR Diatas!` }, { quoted: m })
             }
             break
 
@@ -1126,9 +1126,9 @@ break
             }
             break
             case 'delete': case 'del': case 'd': {
-                if (!m.quoted) throw false
+            	if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
-                if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
+                if (!isBaileys) throw '*_Tuh Pesan Bukan Dari Bot Deck_*'
                 hisoka.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
             }
             break
