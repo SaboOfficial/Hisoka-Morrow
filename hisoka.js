@@ -1167,7 +1167,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `「 Broadcast Bot 」\n\n${text}`
+                      let txt = `「 Sabo Botz - Broadcast 」\n\n${text}`
                       hisoka.send5ButImg(i, txt, hisoka.user.name, global.thumb, btn)
                     }
                 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
@@ -1206,7 +1206,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `「 Broadcast Bot 」\n\n${text}`
+                      let txt = `「 Sabo Botz - Broadcast 」\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
 		}
 		m.reply('Sukses Broadcast')
@@ -1437,7 +1437,7 @@ break
                 }
                 break
         case 'gimage': case 'image': {
-        if (!text) throw `Example : ${prefix + command} Yang Ingin Dicari`
+        if (!text) throw `Example : ${prefix + command} Kaori Cicak`
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
         n = result
@@ -1543,7 +1543,7 @@ break
             break
             case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': {
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Generate Random ' + command }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Nih Deck ' + command 'nya' }, { quoted: m })
             }
             break
 	    case 'couple': {
