@@ -1230,24 +1230,24 @@ break
                                     url: 'https://tiktok.com/@dzyyours'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Nomor Owner',
-                                    phoneNumber: '+62 821-4520-3493'
+                                urlButton: {
+                                    displayText: 'Group Bot',
+                                    url: 'https://chat.whatsapp.com/HXYr0URrvwk4q7GJy3BKKA'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Sewabot',
-                                    id: 'donasi'
+                                    id: 'sewa'
                                 }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Donasi',
+                                    id: 'donasi'
+                                }  
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Owner',
                                     id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
                                 }
                             }]
                       let txt = `「 Sabo Botz - Broadcast 」\n\n${text}`
@@ -1269,24 +1269,24 @@ break
                                     url: 'https://tiktok.com/@dzyyours'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Nomor Owner',
-                                    phoneNumber: '+62 821-4520-3493'
+                                urlButton: {
+                                    displayText: 'Group Bot',
+                                    url: 'https://chat.whatsapp.com/HXYr0URrvwk4q7GJy3BKKA'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Sewabot',
-                                    id: 'donasi'
+                                    id: 'sewa'
                                 }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Donasi',
+                                    id: 'donasi'
+                                }  
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Owner',
                                     id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
                                 }
                             }]
                       let txt = `「 Sabo Botz - Broadcast 」\n\n${text}`
@@ -2961,24 +2961,24 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                     url: 'https://tiktok.com/@dzyyours'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Nomor Owner',
-                                    phoneNumber: '+62 821-4520-3493'
+                                urlButton: {
+                                    displayText: 'Group Bot',
+                                    url: 'https://chat.whatsapp.com/HXYr0URrvwk4q7GJy3BKKA'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Sewabot',
-                                    id: 'donasi'
+                                    id: 'sewa'
                                 }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Donasi',
+                                    id: 'donasi'
+                                }  
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Owner',
                                     id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
                                 }
                             }]
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
