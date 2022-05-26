@@ -537,7 +537,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 
-case 'runtime': {
+            case 'runtime': {
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
                     cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
@@ -567,8 +567,7 @@ case 'runtime': {
                 let latensi = speed() - timestamp
                 neww = performance.now()
                 oldd = performance.now()
-                respon = `
-Runtime : ${runtime(process.uptime())}
+                respon = `Runtime : ${runtime(process.uptime())}
                 `.trim()
                 m.reply(respon)
             }
