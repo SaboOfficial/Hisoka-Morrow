@@ -533,7 +533,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'sewabot': case 'sewa': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/70d892699f1742f4890cb.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Sabo Botz\n⭔ Rp.5.000 PERMINGGU\n⭔ Rp.8.000 PERBULAN\n⭔ Rp.10.000 PERMANENT\n\nPembayaran Bisa Via Dana/Gopay/Pulsa/Qris All Payment\n\nUntuk Info Lebih Lengkap, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/70d892699f1742f4890cb.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Sabo Botz\n⭔ Rp.5.000 PERMINGGU\n⭔ Rp.8.000 PERBULAN\n⭔ Rp.12.000 PERMANENT\n\nPembayaran Bisa Via Dana/Gopay/Pulsa/Qris All Payment\n\nUntuk Info Lebih Lengkap, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)` }, { quoted: m })
             }
             break
 
@@ -579,38 +579,37 @@ case 'donasi': case 'donate': {
             }
             break
 
-case 'piatu':
-case 'piyatu': {
- if (!m.isGroup) throw mess.group
+            case 'Piatu': {
+            if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
-            let bh = m.sender
-            let bra = member[Math.floor(Math.random() * member.length)]
-            let bruh = `Awoakwoak Piatu
+            let me = m.sender
+            let piatu = member[Math.floor(Math.random() * member.length)]
+            let jawab = `Awoakwoak Piatu
 
- @${bra.split('@')[0]}`
-            let ments = [bh, bra]
+@${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
+            let ments = [me, jodoh]
             let buttons = [
                         { buttonId: 'piatu', buttonText: { displayText: 'Piatu' }, type: 1 }
                     ]
-                     hisoka.sendButtonText(m.chat, buttons, bruh, zyy.user.name, m, {mentions: ments})
-}
-break
+                    await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: ments})
+            }
+            break
 
-case 'yatim':{
- if (!m.isGroup) throw mess.group
+            case 'yatim': {
+            if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
-            let oi = m.sender
-            let ytm = member[Math.floor(Math.random() * member.length)]
-            let mty = `Awoakwoak Yatim
+            let me = m.sender
+            let yatim = member[Math.floor(Math.random() * member.length)]
+            let jawab = `Awoakwoao Yatim
 
- @${ytm.split('@')[0]}`
-            let ments = [oi, ytm]
+@${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
+            let ments = [me, jodoh]
             let buttons = [
                         { buttonId: 'yatim', buttonText: { displayText: 'Yatim' }, type: 1 }
                     ]
-                     hisoka.sendButtonText(m.chat, buttons, mty, zyy.user.name, m, {mentions: ments})
-}
-break
+                    await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: ments})
+            }
+            break
 
 case 'menj': case 'meno': case 'meni': case 'menp': case 'meny': {
                 m.reply('*_Mungkin Maksud Anda Adalah .menu_*')
