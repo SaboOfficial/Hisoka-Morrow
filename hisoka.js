@@ -1232,7 +1232,7 @@ break
                             }, {
                                 urlButton: {
                                     displayText: 'Group Bot',
-                                    url: 'https://chat.whatsapp.com/HXYr0URrvwk4q7GJy3BKKA'
+                                    url: 'https://chat.whatsapp.com/BXRH5ApRnbaHm6ULbPuG4d'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1271,7 +1271,7 @@ break
                             }, {
                                 urlButton: {
                                     displayText: 'Group Bot',
-                                    url: 'https://chat.whatsapp.com/HXYr0URrvwk4q7GJy3BKKA'
+                                    url: 'https://chat.whatsapp.com/BXRH5ApRnbaHm6ULbPuG4d'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2963,7 +2963,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             }, {
                                 urlButton: {
                                     displayText: 'Group Bot',
-                                    url: 'https://chat.whatsapp.com/HXYr0URrvwk4q7GJy3BKKA'
+                                    url: 'https://chat.whatsapp.com/BXRH5ApRnbaHm6ULbPuG4d'
                                 }
                             }, {
                                 quickReplyButton: {
