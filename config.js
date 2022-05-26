@@ -9,16 +9,16 @@ const chalk = require('chalk')
 
 // Website Api
 global.APIs = {
-	zenz: 'https://zenzapis.xyz',
+	zenz: 'https://zenzapis.xyz/',
 }
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Sabo',
+	'https://zenzapis.xyz/': 'netrogembel',
 }
 
 // Other
-global.owner = ['6282145203493','628815952469']
+global.owner = ['628815952469']
 global.premium = ['6282145203493','628815952469']
 global.packname = 'Sabo'
 global.author = 'Sabo - MD'
@@ -27,13 +27,13 @@ global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: '*_Done Ngab_*',
-    admin: '*_Khusus Admin Deck, Lu Ngapain Coba? Awoakwoak_*',
-    botAdmin: '*_Mikir Dek Bot Ga Admin_*',
-    owner: '*_Khusus Owner Deck, Lu Ngapain Coba? Awoakwoak_*',
+    admin: '*_Yang Bisa Cuman Admin Deck, Member Gausah Soker Deck_*',
+    botAdmin: '*_Mikir Deck Bot Ga Admin_*',
+    owner: '*_Yang Bisa Cuman Owner Deck, Lu Siapa? Owner Aja Bukan_*',
     group: '*_Cuman Bisa Di Group Deck_*',
     private: '*_Cuman Bisa Di Private Message Deck_*',
     bot: '*_Fitur Khusus Pengguna Bot Deck_*',
-    wait: '*_Sabar Deck..._*',
+    wait: '*_Bentar Deck..._*',
     endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
 }
 global.limitawal = {

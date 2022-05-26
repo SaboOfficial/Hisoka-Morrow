@@ -89,6 +89,31 @@
       "afkTime": -1,
       "afkReason": "",
       "limit": 1000
+    },
+    "628815952469@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": "Infinity"
+    },
+    "62887435910099@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 1000
+    },
+    "628315414370@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 1000
+    },
+    "6289652998222@s.whatsapp.net": {
+      "afkTime": 1653179668651,
+      "afkReason": "mau ngepet",
+      "limit": 1000
+    },
+    "6288976956303@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 1000
     }
   },
   "chats": {
@@ -155,6 +180,10 @@
     "120363024646709317@g.us": {
       "mute": false,
       "antilink": false
+    },
+    "628815952469@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
     }
   },
   "database": {},
@@ -180,6 +209,10 @@
       "autobio": false
     },
     "6285692305785@s.whatsapp.net": {
+      "status": 0,
+      "autobio": false
+    },
+    "628815952469@s.whatsapp.net": {
       "status": 0,
       "autobio": false
     }

@@ -532,8 +532,93 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
-	    case 'donasi': case 'sewabot': case 'sewa': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/b210a360b5947659bbede.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Sabo MD\n⭔ Rp.4.000 PERMINGGU\n⭔ Rp.6.000 PERBULAN\n⭔ Rp.8.000 PERMANENT\n\nPembayaran Bisa Via Dana/Gopay/Pulsa/Qris All Payment\n\nUntuk Info Lebih Lengkap, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nDonasi Untuk Saya :\n⭔ Dana : 0821-4520-3493\n⭔ Gopay : 0821-4520-3493\n⭔ Pulsa : 0821-4520-3493\n⭔ Qris All Payment : Scan Kode QR Diatas!` }, { quoted: m })
+	    case 'sewabot': case 'sewa': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/70d892699f1742f4890cb.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Sabo Botz\n⭔ Rp.5.000 PERMINGGU\n⭔ Rp.8.000 PERBULAN\n⭔ Rp.10.000 PERMANENT\n\nPembayaran Bisa Via Dana/Gopay/Pulsa/Qris All Payment\n\nUntuk Info Lebih Lengkap, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)` }, { quoted: m })
+            }
+            break
+
+case 'runtime': {
+                const used = process.memoryUsage()
+                const cpus = os.cpus().map(cpu => {
+                    cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
+			        return cpu
+                })
+                const cpu = cpus.reduce((last, cpu, _, { length }) => {
+                    last.total += cpu.total
+                    last.speed += cpu.speed / length
+                    last.times.user += cpu.times.user
+                    last.times.nice += cpu.times.nice
+                    last.times.sys += cpu.times.sys
+                    last.times.idle += cpu.times.idle
+                    last.times.irq += cpu.times.irq
+                    return last
+                }, {
+                    speed: 0,
+                    total: 0,
+                    times: {
+			            user: 0,
+			            nice: 0,
+			            sys: 0,
+			            idle: 0,
+			            irq: 0
+                }
+                })
+                let timestamp = speed()
+                let latensi = speed() - timestamp
+                neww = performance.now()
+                oldd = performance.now()
+                respon = `
+Runtime : ${runtime(process.uptime())}
+                `.trim()
+                m.reply(respon)
+            }
+            break
+
+case 'donasi': case 'donate': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/b93c12e6c8532812dd2b7.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n*Berapapun Donasi Kamu Akan Sangat Membantu*\n*⭔ Dana   : 0821-4520-3493*\n*⭔ Gopay : 0821-4520-3493*\n*⭔ Pulsa   : 0821-4520-3493*\n*⭔ Qris All Payment : Scan Kode Qris Diatas*\n\n*Q : Uang Donasi Akan Dipakai Untuk Apa Bang?*\n*A : Uang Donasi Akan Dipakai Untuk Membeli Apikey*\n*Q : Apikey Apa Bang?*\n*A : Apikey Adalah Suatu Sistem Supaya Kamu Bisa Menggunakan Semua Fitur Bot (Termasuk Fitur Hentai)*\n\n*NOTE : MAU DONASI APA LIAT DOANG KONT*\n\n*Contact Person Owner :*\nhttps://wa.me/62628815952469 ` }, { quoted: m })
+            }
+            break
+
+case 'piatu':
+case 'piyatu': {
+ if (!m.isGroup) throw mess.group
+            let member = participants.map(u => u.id)
+            let bh = m.sender
+            let bra = member[Math.floor(Math.random() * member.length)]
+            let bruh = `Awoakwoak Piatu
+
+ @${bra.split('@')[0]}`
+            let ments = [bh, bra]
+            let buttons = [
+                        { buttonId: 'piatu', buttonText: { displayText: 'Piatu' }, type: 1 }
+                    ]
+                     hisoka.sendButtonText(m.chat, buttons, bruh, zyy.user.name, m, {mentions: ments})
+}
+break
+
+case 'yatim':{
+ if (!m.isGroup) throw mess.group
+            let member = participants.map(u => u.id)
+            let oi = m.sender
+            let ytm = member[Math.floor(Math.random() * member.length)]
+            let mty = `Awoakwoak Yatim
+
+ @${ytm.split('@')[0]}`
+            let ments = [oi, ytm]
+            let buttons = [
+                        { buttonId: 'yatim', buttonText: { displayText: 'Yatim' }, type: 1 }
+                    ]
+                     hisoka.sendButtonText(m.chat, buttons, mty, zyy.user.name, m, {mentions: ments})
+}
+break
+
+case 'menj': case 'meno': case 'meni': case 'menp': case 'meny': {
+                m.reply('*_Mungkin Maksud Anda Adalah .menu_*')
+            }
+            break
+
+case 'anjg': case 'anjing': case 'ngentot': case 'memek': case 'kintil': case 'kntl': case 'ngtd': case 'asw': case 'ngentd': case 'mmk': case 'anjgg': {
+                m.reply('*_Jaga Mulut Lu Anjing Ngentot Jangan Toxic Kontol Ada Bocil Tai Jan Toxic Ya Ngentot_*')
             }
             break
 
@@ -1126,9 +1211,9 @@ break
             }
             break
             case 'delete': case 'del': case 'd': {
-            	if (!m.quoted) throw false
+                if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
-                if (!isBaileys) throw '*_Tuh Pesan Bukan Dari Bot Deck_*'
+                if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
                 hisoka.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
             }
             break
@@ -1437,7 +1522,7 @@ break
                 }
                 break
         case 'gimage': case 'image': {
-        if (!text) throw `Example : ${prefix + command} Kaori Cicak`
+        if (!text) throw `Example : ${prefix + command} Yang Ingin Dicari`
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
         n = result
@@ -1541,11 +1626,18 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
-            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': {
+            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'maid': {
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Nih Deck ' }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Awoakawoak Sukanya Sama Kartun' }, { quoted: m })
             }
             break
+
+ case 'waifus': case 'nekos': case 'trap': case 'blowjob': case 'ass': case 'ahegao': case 'hentai': case 'cum': case 'gangbang': case 'pussy': case 'yuri': case 'mobilewall': case 'masturbation': {
+                m.reply(mess.wait)
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Tch Sange Ama Kartun' }, { quoted: m })
+            }
+            break
+
 	    case 'couple': {
                 m.reply(mess.wait)
                 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
@@ -2371,8 +2463,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 let other = room.other(m.sender)
                 if (other) await hisoka.sendText(other, `\`\`\`Partner Telah Meninggalkan Sesi Anonymous\`\`\``, m)
                 delete this.anonymous[room.id]
-                if (command === 'leave') 
-                break
+                if (command === 'leave') break
             }
             case 'mulai': case 'start': {
                 if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
@@ -2616,6 +2707,31 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}husbu
 │⭔ ${prefix}neko
 │⭔ ${prefix}shinobu
+│⭔ ${prefix}waifus (nsfw)
+│⭔ ${prefix}nekos (nsfw)
+│⭔ ${prefix}trap (nsfw)
+│⭔ ${prefix}blowjob (nsfw)
+│
+└───────⭓
+
+┌──⭓ *Anime Nsfw/Sfw*
+│
+│⭔ ${prefix}anime
+│⭔ ${prefix}waifu
+│⭔ ${prefix}husbu
+│⭔ ${prefix}neko
+│⭔ ${prefix}shinobu
+│⭔ ${prefix}waifus (nsfw)
+│⭔ ${prefix}nekos (nsfw)
+│⭔ ${prefix}trap (nsfw)
+│⭔ ${prefix}blowjob (nsfw)
+│⭔ ${prefix}hentai (nsfw)
+│⭔ ${prefix}ass (nsfw)
+│⭔ ${prefix}gangbang (nsfw)
+│⭔ ${prefix}pussy (nsfw)
+│⭔ ${prefix}yuri (nsfw)
+│⭔ ${prefix}mobilewall (nsfw)
+│⭔ ${prefix}masturbation (nsfw)
 │
 └───────⭓
 
@@ -2695,6 +2811,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}holoh
 │⭔ ${prefix}jadian
 │⭔ ${prefix}jodohku
+│⭔ ${prefix}yatim
+│⭔ ${prefix}piatu
 │⭔ ${prefix}delttt
 │⭔ ${prefix}tictactoe
 │⭔ ${prefix}family100
@@ -2760,6 +2878,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 ┌──⭓ *Main Menu*
 │
 │⭔ ${prefix}ping
+│⭔ ${prefix}runtime
+│⭔ ${prefix}tes
+│⭔ ${prefix}donasi
+│⭔ ${prefix}sewabot
 │⭔ ${prefix}owner
 │⭔ ${prefix}menu / ${prefix}help / ${prefix}?
 │⭔ ${prefix}delete
