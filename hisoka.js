@@ -585,7 +585,7 @@ case 'donasi': case 'donate': {
             let piatu = member[Math.floor(Math.random() * member.length)]
             let jawab = `Awoakwoak Piatu
 
-@${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
+@${me.split('@')[0]}`
             let ments = [me, piatu]
             let buttons = [
                         { buttonId: 'piatu', buttonText: { displayText: 'Piatu' }, type: 1 }
@@ -601,7 +601,7 @@ case 'donasi': case 'donate': {
             let yatim = member[Math.floor(Math.random() * member.length)]
             let jawab = `Awoakwoao Yatim
 
-@${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
+@${me.split('@')[0]}`
             let ments = [me, yatim]
             let buttons = [
                         { buttonId: 'yatim', buttonText: { displayText: 'Yatim' }, type: 1 }
