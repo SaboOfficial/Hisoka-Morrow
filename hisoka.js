@@ -578,7 +578,7 @@ case 'donasi': case 'donate': {
             }
             break
 
-            case 'Piatu': {
+            case 'piatu': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let me = m.sender
