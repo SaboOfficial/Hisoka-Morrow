@@ -14,7 +14,7 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz/': 'netrogembel',
+	'https://zenzapis.xyz/': 'BagasPrdn',
 }
 
 // Other
